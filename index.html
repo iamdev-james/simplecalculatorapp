@@ -10,7 +10,6 @@
   <title>Calculator App</title>
 </head>
 <body>
-<main class="main">
  <div  id="calculator" :class= 'changeBodyBg()'>
   <div id="calculator_sub">
     <div id="calc_header" :class="changeHeaderColor()">
@@ -35,11 +34,10 @@
     </div>
     <div id="calculator_display" :class="changeScreenBg()"></div>
     <div id="calculator_keys" :class = 'changeScreenBg()'>
-      
       <button data-number ="7" :class = 'changeKeypadBg()' class="keys">7</button>
       <button data-number ="8" :class = 'changeKeypadBg()' class="keys">8</button>
       <button data-number ="9" :class = 'changeKeypadBg()' class="keys">9</button>
-      <button data-number ="" id= "delete" class="keys" :class = 'changeDelreBg()'>Del</button>
+      <button data-number ="" id= "delete" class="keys" :class = 'changeDelreBg()'>DEL</button>
       <button data-number ="4" :class = 'changeKeypadBg()' class="keys">4</button>
       <button data-number ="5" :class = 'changeKeypadBg()' class="keys">5</button>
       <button data-number ="6" :class = 'changeKeypadBg()' class="keys">6</button>
@@ -52,12 +50,11 @@
       <button data-number ="0" :class = 'changeKeypadBg()' class="keys">0</button>
       <button data-number ="/" :class = 'changeKeypadBg()' class="keys" data-action ="divide">&divide;</button>
       <button data-number ="*" :class = 'changeKeypadBg()' class="keys" data-action ="multiply">&times;</button>
-      <button class="keys reset" :class = 'changeDelreBg()' id="clear" data-action="clear">Reset</button>
+      <button class="keys reset" :class = 'changeDelreBg()' id="clear" data-action="clear">RESET</button>
       <button id="calculate" :class = 'changeEqualSignStyle()' class="keys equal" data-action="calculate">=</button>
     </div>
 </div>
 </div>
-</main>
 <script
 src="https://code.jquery.com/jquery-1.12.4.js"
 integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="

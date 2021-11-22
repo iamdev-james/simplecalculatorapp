@@ -2,10 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
-  
-.main {
-  width: 100vw;
-  height: 100vh; }
 
 .color-white {
   color: white; }
@@ -41,22 +37,25 @@
 
 #theme-color {
   margin: auto;
-  height: 17px;
-  width: 55px;
-  border-radius: 22%;
+  height: 27px;
+  width: 60px;
+  border-radius: 35%;
   background: rgba(31, 31, 43, 0.878); }
 
 .theme {
   margin: auto;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   display: inline-block;
   background: transparent; 
   border-radius: 50%; }
 
 .theme_1 {
-  margin-left: 5px;
-}
+  margin-left: 5px; }
+
+.theme_1, .theme_2, .theme_3 {
+  margin-top: 6px; }
+
 #calculator{
   width: 100vw;
   height: 100vh;
@@ -69,9 +68,9 @@
 }
 
 #calculator_display {
-  height: 55px;
+  height: 95px;
   margin: 20px auto;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 800;
   text-align:right;
   border-radius: 3%;  }
@@ -79,7 +78,7 @@
 #calculator_keys{
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  border-radius: 3%; }
+  border-radius: 4%; }
 
 .keys {
   margin: 10px;
@@ -96,6 +95,7 @@
   grid-column-end: 5;
   background-color: rgba(216, 19, 19, 0.795);
   border: none;
+  margin-bottom: 30px;
   font-size: 24px; }
   
 .reset{
@@ -104,6 +104,7 @@
   grid-column-end: 3;
   background: yellow;
   border: none;
+  margin-bottom: 30px;
   font-size: 24px; }
 
   /* Changing classes */
@@ -143,8 +144,8 @@
   color: aliceblue;
 }
 .theme-2-delre-btn-background {
-  background: rgb(21, 82, 70);
-  box-shadow: 0px 4px 0px rgb(16, 43, 39);
+  background: rgb(44, 161, 138);
+  box-shadow: 0px 4px 0px rgb(24, 88, 79);
   color: aliceblue;
 }
 .theme-3-delre-btn-background {
@@ -177,7 +178,7 @@
 }
 .theme-2-equal-btn {
   background: rgb(207, 102, 22);
-  box-shadow: 0px 4px 0px rgb(173, 73, 6);
+  box-shadow: 0px 4px 0px rgb(119, 49, 3);
   color: aliceblue;
 }
 .theme-3-equal-btn {
@@ -195,37 +196,41 @@
   background: rgb(7, 245, 241);
 }
 
+/* Responsiveness media Queries */
 @media only screen and (max-width: 450px) {
-  #calculator {
+  #calculator_sub {
     width: 90vw;
     height: 100vh;
   }
   .keys {
-    margin: 6px;
+    margin: 7px;
   }
   #calculator_keys{
-    grid-template-columns: repeat(4, 90px);
+    grid-template-columns: repeat(4, 92px);
     height: 65vh;
+  }
+  .equal, .reset {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 400px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 84px);
   }
 }
 @media only screen and (max-width: 350px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 70px);
+    grid-template-columns: repeat(4, 72px);
   }
 }
 @media only screen and (max-width: 300px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: repeat(4, 62px);
   }
 }
 @media only screen and (max-width: 250px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 40px);
+    grid-template-columns: repeat(4, 42px);
   }
   .keys {
     font-size: 16px;
