@@ -23,6 +23,7 @@
   justify-content: space-between; }
 
 .theme-text {
+  font-weight: 700;
   margin-right: 10px;
   font-size: 15px; }
 
