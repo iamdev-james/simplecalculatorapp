@@ -206,7 +206,7 @@
     margin: 7px;
   }
   #calculator_keys{
-    grid-template-columns: repeat(4, 92px);
+    grid-template-columns: repeat(4, 90px);
     height: 65vh;
   }
   .equal, .reset {
@@ -215,7 +215,7 @@
 }
 @media only screen and (max-width: 400px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 82px);
+    grid-template-columns: repeat(4, 80px);
   }
 }
 @media only screen and (max-width: 350px) {
