@@ -215,12 +215,12 @@
 }
 @media only screen and (max-width: 400px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 77px);
   }
 }
 @media only screen and (max-width: 350px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 67px);
+    grid-template-columns: repeat(4, 69px);
   }
 }
 @media only screen and (max-width: 300px) {
