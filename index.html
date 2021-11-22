@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="./CSS/style.css">
   <title>Calculator App</title>
 </head>
-<body :class = 'changeBodyBg()'>
- <main class="main">
-  <div id="calculator">
+<body>
+<main class="main">
+ <div  id="calculator" :class= 'changeBodyBg()'>
+  <div id="calculator_sub">
     <div id="calc_header" :class="changeHeaderColor()">
       <div>
        <p id="calc_header_text">calc</p>
@@ -54,6 +55,7 @@
       <button class="keys reset" :class = 'changeDelreBg()' id="clear" data-action="clear">Reset</button>
       <button id="calculate" :class = 'changeEqualSignStyle()' class="keys equal" data-action="calculate">=</button>
     </div>
+</div>
 </div>
 </main>
 <script

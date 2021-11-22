@@ -58,9 +58,15 @@
   margin-left: 5px;
 }
 #calculator{
+  width: 100vw;
+  height: 100vh;
+  margin: auto; }
+
+#calculator_sub {
   width: 400px;
   height: 500px;
-  margin: auto; }
+  margin: auto;
+}
 
 #calculator_display {
   height: 55px;
