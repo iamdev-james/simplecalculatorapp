@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="shortcut icon" href="./Images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Calculator App</title>
+</head>
+<body>
+ <main class="main" :class = 'changeBodyBg()'>
+  <div id="calculator">
+    <div id="calc_header" :class="changeHeaderColor()">
+      <div>
+       <p id="calc_header_text">calc</p>
+      </div>
+        <div id="theme">
+          <p class="theme-text">THEME</p>
+          <div id="theme-sub">
+            <div id="theme-number">
+              <span class="theme-number-display theme-number-1">1</span>
+              <span class="theme-number-display theme-number-2">2</span>
+              <span class="theme-number-display theme-number-3">3</span>
+            </div>
+            <div id="theme-color">
+              <span :class = '{"theme-1-theme-btn" : theme1}' @click = 'switchToTheme1()' class="theme theme_1"></span>
+              <span :class = '{"theme-2-theme-btn" : theme2}' @click = 'switchToTheme2()' class="theme theme_2"></span>
+              <span :class = '{"theme-3-theme-btn" : theme3}' @click = 'switchToTheme3()' class="theme theme_3"></span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="calculator_display" :class="changeScreenBg()"></div>
+    <div id="calculator_keys" :class = 'changeScreenBg()'>
+      
+      <button data-number ="7" :class = 'changeKeypadBg()' class="keys">7</button>
+      <button data-number ="8" :class = 'changeKeypadBg()' class="keys">8</button>
+      <button data-number ="9" :class = 'changeKeypadBg()' class="keys">9</button>
+      <button data-number ="" id= "delete" class="keys" :class = 'changeDelreBg()'>Del</button>
+      <button data-number ="4" :class = 'changeKeypadBg()' class="keys">4</button>
+      <button data-number ="5" :class = 'changeKeypadBg()' class="keys">5</button>
+      <button data-number ="6" :class = 'changeKeypadBg()' class="keys">6</button>
+      <button data-number ="+" :class = 'changeKeypadBg()' class="keys" data-action ="add">+</button>
+      <button data-number ="1" :class = 'changeKeypadBg()' class="keys">1</button>
+      <button data-number ="2" :class = 'changeKeypadBg()' class="keys">2</button>
+      <button data-number ="3" :class = 'changeKeypadBg()' class="keys">3</button>
+      <button data-number ="-" :class = 'changeKeypadBg()' class="keys" data-action ="subtract">-</button>
+      <button data-number ="." :class = 'changeKeypadBg()' class="keys" data-action="decimal">.</button>
+      <button data-number ="0" :class = 'changeKeypadBg()' class="keys">0</button>
+      <button data-number ="/" :class = 'changeKeypadBg()' class="keys" data-action ="divide">&divide;</button>
+      <button data-number ="*" :class = 'changeKeypadBg()' class="keys" data-action ="multiply">&times;</button>
+      <button class="keys reset" :class = 'changeDelreBg()' id="clear" data-action="clear">Reset</button>
+      <button id="calculate" :class = 'changeEqualSignStyle()' class="keys equal" data-action="calculate">=</button>
+    </div>
+</div>
+</main>
+<script
+src="https://code.jquery.com/jquery-1.12.4.js"
+integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+crossorigin="anonymous"></script>
+<script src="./JS/app.js"></script>
+</body>
+</html>

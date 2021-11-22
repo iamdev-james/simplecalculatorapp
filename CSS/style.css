@@ -1,0 +1,227 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  
+.main {
+  width: 100vw;
+  height: 100vh; }
+
+.color-white {
+  color: white; }
+
+#calc_header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+#calc_header_text {
+  font-size: 50px;
+  font-weight: 800; }
+
+#theme {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+.theme-text {
+  margin-right: 10px;
+  font-size: 15px; }
+
+#theme-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.theme-number-display {
+  margin: auto 2.5px; }
+
+#theme-color {
+  margin: auto;
+  height: 17px;
+  width: 55px;
+  border-radius: 22%;
+  background: rgba(31, 31, 43, 0.878); }
+
+.theme {
+  margin: auto;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background: transparent; 
+  border-radius: 50%; }
+
+.theme_1 {
+  margin-left: 5px;
+}
+#calculator{
+  width: 400px;
+  height: 500px;
+  margin: auto; }
+
+#calculator_display {
+  height: 55px;
+  margin: 20px auto;
+  font-size: 35px;
+  font-weight: 800;
+  text-align:right;
+  border-radius: 3%;  }
+
+#calculator_keys{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  border-radius: 3%; }
+
+.keys {
+  margin: 10px;
+  padding: 10px 10px;
+  font-size: 30px;
+  outline: none;
+  background: whitesmoke;
+  border: none;
+  border-radius: 10%; }
+
+.equal{
+  grid-row-start: 5;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: rgba(216, 19, 19, 0.795);
+  border: none;
+  font-size: 24px; }
+  
+.reset{
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: yellow;
+  border: none;
+  font-size: 24px; }
+
+  /* Changing classes */
+.theme-1-body-bg {
+  background: rgb(44, 82, 95);
+}
+.theme-2-body-bg {
+  background: rgb(206, 206, 206);
+}
+.theme-3-body-bg {
+  background: rgb(33, 2, 56);
+}
+.theme-1-screen {
+  color: white;
+  background: rgb(16, 19, 19);
+}
+.theme-2-screen {
+  color: black;
+  background: rgb(236, 240, 240);
+}
+.theme-3-screen {
+  color: rgb(196, 196, 36);
+  background: rgba(13, 8, 54, 0.781);
+}
+.theme-1-header-color {
+  color: white;
+}
+.theme-2-header-color {
+  color: black;
+}
+.theme-3-header-color {
+  color: rgb(196, 196, 36);
+}
+.theme-1-delre-btn-background {
+  background: rgb(78, 130, 146);
+  box-shadow: 0px 4px 0px rgb(35, 109, 143);
+  color: aliceblue;
+}
+.theme-2-delre-btn-background {
+  background: rgb(21, 82, 70);
+  box-shadow: 0px 4px 0px rgb(16, 43, 39);
+  color: aliceblue;
+}
+.theme-3-delre-btn-background {
+  background: rgb(116, 37, 155);
+  box-shadow: 0px 4px 0px rgb(209, 114, 233);
+  color: aliceblue;
+}
+.theme-1-keypad-background {
+  font-weight: 700;
+  background: whitesmoke;
+  box-shadow: 0px 4px 0px rgb(173, 173, 173);
+  color: black;
+}
+.theme-2-keypad-background {
+  font-weight: 700;
+  background: whitesmoke;
+  box-shadow: 0px 4px 0px rgb(173, 173, 173);
+  color: black;
+}
+.theme-3-keypad-background {
+  font-weight: 700;
+  background: rgb(81, 4, 97);
+  box-shadow: 0px 4px 0px rgb(214, 117, 247);
+  color: rgb(221, 221, 43);
+}
+.theme-1-equal-btn {
+  background: rgb(173, 23, 23);
+  box-shadow: 0px 4px 0px rgb(129, 33, 33);
+  color: aliceblue;
+}
+.theme-2-equal-btn {
+  background: rgb(207, 102, 22);
+  box-shadow: 0px 4px 0px rgb(173, 73, 6);
+  color: aliceblue;
+}
+.theme-3-equal-btn {
+  background: rgb(7, 245, 241);
+  box-shadow: 0px 4px 0px rgb(147, 245, 252);
+  color: black;
+}
+.theme-1-theme-btn {
+  background: rgb(173, 23, 23);
+}
+.theme-2-theme-btn {
+  background: rgb(207, 102, 22);
+}
+.theme-3-theme-btn {
+  background: rgb(7, 245, 241);
+}
+
+@media only screen and (max-width: 450px) {
+  #calculator {
+    width: 90vw;
+    height: 100vh;
+  }
+  .keys {
+    margin: 6px;
+  }
+  #calculator_keys{
+    grid-template-columns: repeat(4, 90px);
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #calculator_keys{
+    grid-template-columns: repeat(4, 80px);
+  }
+}
+@media only screen and (max-width: 350px) {
+  #calculator_keys{
+    grid-template-columns: repeat(4, 70px);
+  }
+}
+@media only screen and (max-width: 300px) {
+  #calculator_keys{
+    grid-template-columns: repeat(4, 60px);
+  }
+}
+@media only screen and (max-width: 250px) {
+  #calculator_keys{
+    grid-template-columns: repeat(4, 40px);
+  }
+  .keys {
+    font-size: 16px;
+  }
+}
