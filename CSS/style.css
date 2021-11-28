@@ -200,15 +200,15 @@
 /* Responsiveness media Queries */
 @media only screen and (max-width: 450px) {
   #calculator_sub {
-    width: 90vw;
-    height: 100vh;
+    width: 75vw;
+    height: 85vh;
   }
   .keys {
     margin: 7px;
   }
   #calculator_keys{
-    grid-template-columns: repeat(4, 90px);
-    height: 65vh;
+    grid-template-columns: repeat(4, 79px);
+    height: 60vh;
   }
   .equal, .reset {
     margin-bottom: 30px;
@@ -221,17 +221,17 @@
 }
 @media only screen and (max-width: 350px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 69px);
+    grid-template-columns: repeat(4, 59px);
   }
 }
 @media only screen and (max-width: 300px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 62px);
+    grid-template-columns: repeat(4, 52px);
   }
 }
 @media only screen and (max-width: 250px) {
   #calculator_keys{
-    grid-template-columns: repeat(4, 42px);
+    grid-template-columns: repeat(4, 32px);
   }
   .keys {
     font-size: 16px;
